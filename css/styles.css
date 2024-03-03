@@ -45,7 +45,10 @@ body {
 /*======== Styles Top Line ======== */
 
 .page-header {
-    border-bottom: 1px solid #e7e9fc
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
 
@@ -158,6 +161,8 @@ gap: 40px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     }
 .styles-hero-content {
   padding-left: 316px;
@@ -182,6 +187,7 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btc-hero {
     background: #4d5ae5;
@@ -229,6 +235,7 @@ gap: 40px;
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
+            margin-bottom: 8px;
             width: 264px;
             height: 112px;
             background: #f4f4fd;
@@ -242,6 +249,7 @@ gap: 40px;
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
+            margin-bottom: 8px;
             width: 264px;
             height: 112px;
             background: #f4f4fd;
@@ -256,6 +264,7 @@ gap: 40px;
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
+            margin-bottom: 8px;
             width: 264px;
             height: 112px;
             background: #f4f4fd;
@@ -270,6 +279,7 @@ gap: 40px;
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
+            margin-bottom: 8px;
             width: 264px;
             height: 112px;
             background: #f4f4fd;
@@ -363,6 +373,14 @@ gap: 40px;
             display: flex;
             justify-content: center;
             gap: 16px;
+
+        }
+        .social-link-footer {
+            fill: #f4f4fd;
+        }
+        .group-social-link-footer:hover,
+        .group-social-link-footer:focus {
+            background-color: #31d0aa;
         }
         .social-link {
             display: flex;
@@ -375,14 +393,42 @@ gap: 40px;
             fill: #FFFFFF;
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+        .social-link:hover, 
+        .social-link:focus {
+            background-color: #404bbf;
+        }
         
         .icon-instagram {
             width: 16px;
             height: 16px;
             align-items: center;
             justify-content: center;
+            fill: #f4f4fd;
 
         }
+                .icon-twitter {
+                     width: 16px;
+            height: 16px;
+            align-items: center;
+            justify-content: center;
+            fill: #f4f4fd;
+                }
+       
+                .icon-facebook {
+                     width: 16px;
+            height: 16px;
+            align-items: center;
+            justify-content: center;
+            fill: #f4f4fd;
+                }
+        
+                .icon-linkedin {
+                     width: 16px;
+            height: 16px;
+            align-items: center;
+            justify-content: center;
+            fill: #f4f4fd;    
+                }
 
 
 
@@ -414,9 +460,14 @@ gap: 40px;
                     column-gap: 24px;
             
                  }
-                 .element-dodatok {
-                
+                 .element-dodatok:hover {
+                box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+                    0px 1px 1px rgba(46, 47, 66, 0.16),
+                    0px 2px 1px rgba(46, 47, 66, 0.08);
 
+                 }
+                 .element-dodatok {
+                    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
                  }
 
                  .dodatok {
@@ -458,9 +509,8 @@ gap: 40px;
                     height: 100%;
                     overflow: auto;
                     transform: translateY(100%);
-                    padding-top: 40px;
-                    padding-left: 32px;
-                    padding-right: 32px;
+                    padding: 40px 32px;
+                    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
                     font-family: "Roboto", sans-serif;
                     font-weight: 400;
@@ -525,6 +575,8 @@ gap: 40px;
                  .group-footer-flex {
                     display: flex;
                     column-gap: 120px;
+                    align-items: baseline;
+                    margin-right: 120px;
                  }
 
                  .group-social-link-footer {
