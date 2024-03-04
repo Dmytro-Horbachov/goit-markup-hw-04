@@ -231,7 +231,7 @@ gap: 40px;
         .element-features {
         flex-basis: calc((100% - 3 * 24px) / 4)
         }
-        .border-antena {
+        .border-svg {
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
@@ -245,7 +245,7 @@ gap: 40px;
         .icon-antenna {
             fill: #2e2f42;
         }
-        .border-clock {
+        /*.border-clock {
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
@@ -256,11 +256,11 @@ gap: 40px;
             align-items: center;
             justify-content: center;
         }
-        
+        */
         .icon-clock {
             fill: #2e2f42;
         }
-        .border-diagram {
+        /*.border-diagram {
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
@@ -271,11 +271,11 @@ gap: 40px;
             align-items: center;
             justify-content: center;
         }
-        
+        */
         .icon-diagram {
             fill: #2e2f42;
         }
-        .border-astronaut {
+        /*.border-astronaut {
             display: flex;
             border: 1px solid #8e8f99;
             border-radius: 4px;
@@ -286,7 +286,7 @@ gap: 40px;
             align-items: center;
             justify-content: center;
         }
-        
+        */
         .icon-astronaut {
             fill: #2e2f42;
         }
@@ -369,19 +369,7 @@ gap: 40px;
           gap: 24px;
           
         }
-        .group-social-link-footer {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-
-        }
-        .social-link-footer {
-            fill: #f4f4fd;
-        }
-        .group-social-link-footer:hover,
-        .group-social-link-footer:focus {
-            background-color: #31d0aa;
-        }
+        
         .social-link {
             display: flex;
             width: 40px;
@@ -398,7 +386,7 @@ gap: 40px;
             background-color: #404bbf;
         }
         
-        .icon-instagram {
+        .icon {
             width: 16px;
             height: 16px;
             align-items: center;
@@ -406,7 +394,7 @@ gap: 40px;
             fill: #f4f4fd;
 
         }
-                .icon-twitter {
+               /* .icon-twitter {
                      width: 16px;
             height: 16px;
             align-items: center;
@@ -429,7 +417,7 @@ gap: 40px;
             justify-content: center;
             fill: #f4f4fd;    
                 }
-
+                */
 
 
 
@@ -527,6 +515,10 @@ gap: 40px;
 /*======== /Styles Section3 ======== */
 
 /*======== Styles footer ======== */
+                .logo-p {
+                margin-right: 120px;
+                }
+
                 .footer-background {
                     background: #2e2f42;
                     height: 312px;
@@ -580,7 +572,34 @@ gap: 40px;
                  }
 
                  .group-social-link-footer {
-                    display: flex;
+                     display: flex;
+                     justify-content: center;
+                     gap: 16px;
+                
                  }
+                 .icon-footer {
+                    align-items: center;
+                    justify-content: center;
+                    fill: #f4f4fd;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: #4d5ae5;
+                    fill: #FFFFFF;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                 }
+                
+                .social-link-footer {
+                    width: 40px;
+                    height: 40px;
+                    fill: #f4f4fd;
+                }
+                
+                .group-social-link-footer:hover,
+                .group-social-link-footer:focus {
+                    background-color: #31d0aa;
+                }
                
 /*======== /Styles footer ======== */
